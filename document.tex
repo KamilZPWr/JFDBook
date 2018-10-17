@@ -1,0 +1,105 @@
+\documentclass[b5paper,8 pt,leqno]{book}
+\usepackage{polski}  
+\usepackage[utf8]{inputenc}  
+\usepackage{fancyhdr} %naglowki
+\usepackage{amssymb}
+%\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{enumerate}
+\newgeometry{tmargin=2cm, bmargin=2cm, lmargin=1.8cm, rmargin=1.8 cm}
+\usepackage{titlesec}
+
+\begin{document}
+\begin{enumerate}
+\small
+\setcounter{enumi}{3}
+\item
+	\begin{enumerate}[a)]
+		\item 
+		\item 
+		\newpage
+		
+		\item Udowodnić, że 
+		\begin{equation*}
+			[T(B)]' = T(B').
+		\end{equation*}
+		\item Z b) i c) wywnioskować, że
+		\begin{equation*}
+			T(B)\cup T(C) = T(B \cup C).
+		\end{equation*}
+	\end{enumerate} 
+\item Udowodnić, że jeśli algebra jest skończona to:
+\begin{enumerate}[a)]
+	\item Opisane w twierdzeniu 2 odwzorowywanie przeprowadza różne elementy na różne,
+	tzn. jeśli $B\neq C$ to $T(B) \neq T(C)$. \\
+	W\ s\ k\ a\ z\ ó\ w\ k\ a\ . Jeżli $B\neq C$, to istnieje atom należący do jednego elementu,
+	a nie należący do drugiego.
+	
+	\item Dla każdego podzbioru S zbioru atomów istnieje element D taki, że $T(D) = S$.\\
+	W\ s\ k\ a\ z\ ó\ w\ k\ a\ . Wziąć za $D$ sumę, w sensie $A_1 \cup A_2 \cup \dots \cup A_k$, wszystkich atomów $A_1, \dots, A_k$ należących do $D$.
+\end{enumerate}
+
+\item Z twierdzenia 3 wywnioskować, że każda algebra Boole'a skończona ma liczbę elementów postaci $2^n$.
+
+\item Udowodnić, że rachunek zadań w przypadku, gdy liczba zmiennych zdaniowych jest nieskończona, traktowany jako algebra Boole'a tak jak w przykładzie 2, z paragrafu 38, jest algerbą Boole'a, w której żaden element nie ma atomu. Algebry takie nazywamy algebrami \textit{bezatomowymi}.
+\end{enumerate}
+
+\normalsize
+\textbf{\textsection \, 42. ZNACZENIE TWIERDZEŃ O REPREZENTACJI} \\
+\indent Omówmy teraz wnioski jakie płyną z twierdzenia o reprezantacji algebry Boole'a. \\
+\indent Algebry Boole'a wprowadziliśmy aksjomatycznie w \textsection31 tego rozdziału, używając języka potocznego. Teorię tę można również przedstawić w postaci elementarnej teorii sformalizowanej (zob. r. IV). \\
+\indent Formułami atomowymi są formuły postaci równości dwóch termów.
+\begin{equation}
+f(x_1, \dots, x_n) = g(x_1, \dots, x_n)
+\label{eq1}
+\end{equation}
+\textit{Termy} są to wyrażenia zbudowane w omówiony sposób ze zmiennych $x_1, x_2, x_3, \dots$ stałych 0 oraz 1 (działań zeroargumentowych), symboli ,,$'$'' działania jednoagrumentowego, oraz symboli ,,$\cup$'' i ,,$\cap$'' działań dwuargumentowych. Na przykład wyrażenia;
+
+\begin{gather*}
+\left( (X_1 \cap X_3) \cup (X_2')'\right) \cup (0 \cup X_1),\\
+X_1 \cup (X_2 \cup X_3), \quad 1'\cup(0 \cap 0), \quad X_5, \quad X_1', \quad 0, \quad 1 
+\end{gather*}
+
+są termami, natomiast wyrażenie:
+\begin{equation*}
+X_1 \cap \cap '(X_1\cup 0)
+\end{equation*}
+nie jest termem, gdyż nie jest poprawnie zbudowane.
+
+\indent Z formuł postaci (\ref{eq1}) budujemy inne formuły, łącząc je spójnikami zdaniowymi i opatrując kwantyfikatorami.
+
+\indent Formułą będzie na przykład
+\begin{equation*}
+\textrm{A}x_1 \; \textrm{E}x_1 \; (x_1 \cup x_2 = x_2) \; \& \sim (0 = x_1),
+\end{equation*}
+czy też
+
+\begin{equation*}
+\textrm{A}x_1 \; (x_1 = x_1).
+\end{equation*}
+
+Formuła ta jest zdaniem, gdyż nie zawiera zmiennych wolnych. Lecz już formuła
+
+\begin{equation*}
+\textrm{E}x_2[(x_1 \cup x_1 = x_2) \; \& \; (0=x_1)],
+\end{equation*}
+
+czy też formuła 
+\begin{equation*}
+	x_1 = x_1
+\end{equation*}
+nie są zdaniami, gdyż zawierają zmienną wolną $x_1$.
+
+\indent Aksjomatami teorii będą następujące zdania:
+\begin{enumerate}
+	\item Aksjomat dotyczący elementów wyróżnionych
+	\begin{equation*}
+	\thicksim (0 = 1).
+	\end{equation*}
+	
+	\item Aksjomat równości:
+	
+\end{enumerate}
+\end{document}
